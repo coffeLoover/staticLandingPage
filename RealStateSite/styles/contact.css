@@ -1,0 +1,172 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+body {
+  background-color: #e6e6e6;
+  font-size: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+div, textarea, input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.contactContainer {
+  max-width: 510px;
+  min-width: 324px;
+  margin: 50px auto 0px;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+  border-bottom: 3px solid #ccc;
+}
+
+.contactRow {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+}
+.contactRow.header {
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid #ccc;
+  background: url(images/blur.jpg) left -80px;
+  background-size: cover;
+
+  color: #fff;
+}
+.contactRow.body {
+  padding: .5em 2.5em 1em;
+}
+
+.pull-right {
+  float: right;
+}
+
+
+form {
+  max-width: 100%;
+  display: block;
+}
+form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+form ul li {
+  margin: 0 0 0.25em 0;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+form ul li:last-child {
+  margin: 0;
+}
+form ul li p {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+form ul li p.right {
+  float: right;
+}
+form ul li .divider {
+  margin: 0.5em 0 0.5em 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
+}
+form ul li .req {
+  color: #ee9cb4;
+}
+form label {
+  display: block;
+  margin: 0 0 0.5em 0;
+  color: #41BA91;
+  font-size: 1em;
+}
+form input {
+  margin: 0 0 0.5em 0;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  color: #555;
+  font-size: 1em;
+}
+form textarea {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  width: 100%;
+  color: #555;
+}
+form small {
+  color: #4f6fad;
+  margin: 0 0 0 0.5em;
+}
+
+@media only screen and (max-width: 480px) {
+  .pull-right {
+    float: none;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  label {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    clear: both;
+  }
+
+  li, p {
+    width: 100%;
+  }
+
+  input.btn {
+    margin: 1.5em 0 0.5em;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.125em;
+  }
+
+  li small {
+    display: none;
+  }
+}
+
+
+#submitbtn {
+  background: #41BA91;
+  background-image: -webkit-linear-gradient(top, #41BA91, #41BA91);
+  background-image: -moz-linear-gradient(top, #41BA91, #41BA91);
+  background-image: -ms-linear-gradient(top, #41BA91, #41BA91);
+  background-image: -o-linear-gradient(top, #41BA91, #41BA91);
+  background-image: linear-gradient(to bottom, #41BA91, #41BA91);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+#submitbtn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #397D6A, #397D6A);
+  background-image: -moz-linear-gradient(top, #397D6A, #397D6A);
+  background-image: -ms-linear-gradient(top, #397D6A, #397D6A);
+  background-image: -o-linear-gradient(top, #397D6A, #397D6A);
+  background-image: linear-gradient(to bottom, #397D6A, #397D6A);
+  text-decoration: none;
+}

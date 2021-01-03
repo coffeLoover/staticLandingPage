@@ -1,0 +1,121 @@
+<html xmlns:ng="http://angularjs.org" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch postmessage hashchange history draganddrop rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent webworkers applicationcache svg inlinesvg smil svgclippaths cookies filereader no-iemail no-appleios no-msie ng-scope no-handheld skrollr skrollr-desktop RealStateHome">
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="RealState expedites the time students spend on their workload, by enabling them to communicate with one another effortlessly to complete any form of assignment, and/or college related question.">
+      <meta name="author" content="John Doe, JawDroppers LLC.">
+      <meta name="copyright" content="Copyright © 2015 RealState">
+      <meta http-equiv="Content-Language" content="en_US">
+      <meta property="og:title" content="RealState">
+      <meta property="og:description" content="RealState expedites the time students spend on their workload, by enabling them to communicate with one another effortlessly to complete any form of assignment, and/or college related question.">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito">
+      <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="styles/contact.css">
+      <link rel="stylesheet" type="text/css" href="styles/grid.css">
+      <link rel="shortcut icon" href="images/RealState120px.png"/>
+      <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+      <title>RealState Application</title>
+   </head>
+   <body data-jumbotronasaurus="true">
+      <div id="main-wrapper">
+         <header id="page-header" ui-view="header" class="ng-scope">
+            <div ui-view="navigation" class="ng-scope">
+               <div id="site-navigation" sticky-navigation="" class="ng-scope">
+                  <nav class="container main-navigation" role="navigation">
+                     <p class="site-logo"> <a ui-sref="home" title="RealState" rel="home" href="/"><span><img src="images/logo.png"/></span></a> </p>
+                     <div class="navigation-main">
+                        <ul class="nav-items">
+                           <li title="Home"> <a href="home.html#page-header">Home</a> </li>
+                           <li title="About"> <a href="home.html#howWorks">About</a> </li>
+                           <li  title="Features"> <a href="home.html#features">Features</a> </li>
+                           <li> <a class="" href="https://itunes.apple.com/us/app/RealState/id960526534?ls=1&mt=8" target="_blank">Download</a> </li>
+                           <li  title="Contact"> <a href="contact.html">Contact</a> </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+<div class="contactContainer" id="formSubmission" style="margin-top:120px;">
+  <div class="contactRow header" >
+    <h1>CONTACT US &nbsp;</h1>
+    <h3>Fill out the form below!</h3>
+  </div>
+  <div class="contactRow body">
+    <form action="#">
+      <ul>
+        
+        <li>
+          <p class="left">
+            <label for="first_name">Name<span class="req">*</span></label>
+            <input type="text" name="first_name" placeholder="Austin Pitt" />
+          </p>
+          <p class="pull-right">
+            <label for="last_name">RealState User Pin</label>
+            <input type="text" name="last_name" placeholder="11111" />      
+          </p>
+        </li>
+        
+        <li>
+          <p>
+            <label for="email">Email<span class="req">*</span></label>
+            <input type="email" name="email" placeholder="austin.pitt@gmail.com" />
+          </p>
+        </li>        
+        <li><div class="divider"></div></li>
+        <li>
+          <label for="comments">Explain your concern<span class="req">*</span></label>
+          <textarea cols="46" contactRows="3" name="comments"></textarea>
+        </li>
+        
+        <li>
+          <input class="btn btn-submit" id ="submitbtn" type="submit" value="Submit" />
+        </li>
+        
+      </ul>
+    </form>  
+  </div>
+</div>
+         <footer ui-view="footer" id="page-footer" data-autoscroll="false" class="ng-scope" style="height:37%;">
+            <div class="container ng-scope" style="">
+               <center>
+                  <div class="RealState-footer">
+                     <ul>
+                        <li> <a href="http://twitter.com/RealStateapp" target="_blank"><img src="images/twitter.png" style="margin-right:25px;"></i><span>Twitter</span></a> </li>
+                        <li> <a href="http://www.facebook.com/RealStateapp" target="_blank"><img src="images/facebook.png" style="margin-right:25px;"></i><span>Facebook</span></a> </li>
+                        <li> <a href=""><img src="images/instagram.png" ></i><span>Instagram</span></a> </li>
+                     </ul>
+                  </div>
+               </center>
+               <ul class="footer-list bullet primary-footer-nav">
+                  <li> <small class="ng-binding">© 2015 RealState&nbsp&nbsp&nbsp&nbsp&nbsp</small> </li>
+                  <li> <small><a ui-sref="terms" href="terms.html">Terms and Conditions&nbsp&nbsp&nbsp&nbsp&nbsp</a></small> </li>
+                  <li> <small><a ui-sref="privacy" href="privacy.html">Privacy Policies</a></small> </li>
+               </ul>
+               <div style="margin-left:auto;margin-right:auto;width:160px;">
+               <div class="appDownloadList-container ng-scope" ng-controller="home.TextDownloadLinkCtrl">
+                  <!-- ngIf: phoneStore !== 'desktop' --> <!-- ngIf: phoneStore === 'desktop' -->
+                  <div class="get-app cta ng-scope" ng-if="phoneStore === 'desktop'" >
+                     <div class="appDownloadList" >
+                        <ul class="footer-list">
+                        
+                           <li> <a href="https://itunes.apple.com/us/app/RealState/id960526534?ls=1&mt=8" class="apple-store" target="_blank">Apple Store </a> </li>
+                        
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- end ngIf: phoneStore === 'desktop' --> 
+               </div>
+               
+               </div>
+            </div>
+         </footer>
+      </div>
+      <div id="fb-root" class=" fb_reset">
+         <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+            <div></div>
+         </div>
+      </div>
+      <script type="text/javascript">
+         $('#site-navigation').css('background-color', 'rgba(' + 10+ ',' + 10 + ',' + 10 + ',' + 0.93 + ')');
+      </script>
+   </body>
+</html>
